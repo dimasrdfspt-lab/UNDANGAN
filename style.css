@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #4a3b32;
+}
+
+/* COVER SECTION */
+.cover {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(rgba(247, 241, 235, 0.82), rgba(247, 241, 235, 0.92)),
+                url("[https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80](https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80)");
+    background-size: cover;
+    background-position: center;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.love-story .small-title {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0 0 20px;
+}
+
+.date {
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.invitation {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+button, .btn-buka {
+    display: inline-block;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #8b6f5a;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .btn-buka:hover {
+    background: #6f5746;
+}
+
+/* ISI UNDANGAN SECTION */
+.isi-undangan {
+    min-height: 100vh;
+    padding: 100px 25px;
+    text-align: center;
+    background: #fffaf6;
+}
+
+.isi-undangan h2 {
+    font-size: 45px;
+    font-weight: normal;
+    margin: 15px 0 30px;
+}
+
+.isi-undangan > p {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.acara {
+    max-width: 450px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 15px;
+    background: #f7f1eb;
+}
+
+.acara h3 {
+    font-size: 24px;
+    font-weight: normal;
+}
+
+/* MEMPELAI SECTION */
+.mempelai {
+    padding: 100px 25px;
+    text-align: center;
+    background: #f7f1eb;
+}
+
+.mempelai h2 {
+    font-size: 42px;
+    font-weight: normal;
+    margin-bottom: 50px;
+}
+
+.pasangan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.orang {
+    width: 280px;
+}
+
+.foto {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orang h3 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.orang p {
+    line-height: 1.6;
+}
+
+.dan {
+    font-size: 40px;
+}
+
+/* RESPONSIVE DESIGN (TAMPILAN HP) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    .small-title {
+        font-size: 11px;
+    }
+
+    .date {
+        font-size: 16px;
+    }
+
+    .pasangan {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dan {
+        margin: 10px 0;
+    }
+}
+
+untuk hitungan menuju 
+
+.countdown-section {
+    margin-top: 60px;
+}
+
+.countdown-section h3 {
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.countdown div {
+    width: 80px;
+    padding: 15px 5px;
+    background: #f7f1eb;
+    border-radius: 12px;
+}
+
+.countdown span {
+    display: block;
+    font-size: 28px;
+}
+
+.countdown small {
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+
+    .countdown {
+        gap: 8px;
+    }
+
+    .countdown div {
+        width: 70px;
+    }
+}
+
+```css
+/* LOKASI SECTION */
+/* Styling Section Lokasi */
+.lokasi {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fdfbf7; /* Sesuaikan warna latar belakang dengan tema Anda */
+}
+
+.container-lokasi {
+    max-width: 600px;
+    margin: 0 auto; /* Membuat semua konten lokasi ke tengah */
+}
+
+.lokasi .small-title {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8b7355;
+    margin-bottom: 5px;
+}
+
+.lokasi h2 {
+    font-family: 'Playfair Display', serif, Georgia; /* Sesuaikan font judul */
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Styling Box Kartu Alamat */
+.lokasi-box {
+    background-color: #f3ece4; /* Warna latar krem soft seperti di gambar */
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.lokasi-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #4a3e3d;
+}
+
+.lokasi-box .alamat {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Styling Tombol Lokasi */
+.btn-lokasi {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #8c735d; /* Warna tombol cokelat/beige tema */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-lokasi:hover {
+    background-color: #6e5947;
+    transform: translateY(-2px);
+}
+/* TOMBOL MUSIK */
+
+.tombol-musik {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #8b6f5a;
+    color: white;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    z-index: 999;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+```css
+/* LOVE STORY */
+
+.love-story {
+    padding: 100px 25px;
+    text-align: center;
+    background: #f7f1eb;
+}
+
+.love-story h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 15px 0 50px;
+}
+
+.story {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+}
+
+.story-item {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 35px;
+    align-items: flex-start;
+}
+
+.story-year {
+    min-width: 80px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #8b6f5a;
+}
+
+.story-content {
+    background: #fffaf6;
+    padding: 20px 25px;
+    border-radius: 15px;
+    flex: 1;
+}
+
+.story-content h3 {
+    margin-top: 0;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+.story-content p {
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+
+    .story-item {
+        gap: 15px;
+    }
+
+    .story-year {
+        min-width: 60px;
+        font-size: 18px;
+    }
+
+    .story-content {
+        padding: 18px;
+    }
+}
+```
+
+/* GALERI */
+
+.galeri {
+    padding: 100px 25px;
+    text-align: center;
+    background: #fffaf6;
+}
+.galeri .small-title {
+    text-align: center;
+    width: 100%;
+}
+
+.galeri h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 15px 0 50px;
+}
+
+.galeri-grid {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.galeri-item {
+    height: 300px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 600px) {
+
+    .galeri-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeri-item {
+        height: 300px;
+    }
+}
+
+/* RSVP */
+
+.rsvp {
+    padding: 100px 25px;
+    text-align: center;
+    background: #f7f1eb;
+}
+
+.rsvp .small-title {
+    text-align: center;
+}
+
+.rsvp h2 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: normal;
+    margin: 15px 0 25px;
+}
+
+.rsvp-text {
+    max-width: 550px;
+    margin: 0 auto 40px;
+    line-height: 1.8;
+}
+
+.rsvp-form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    background: #fffaf6;
+    color: #4a3b32;
+}
+
+.rsvp-form textarea {
+    resize: vertical;
+}
+
+.rsvp-form button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #8b6f5a;
+    color: white;
+    font-size: 16px;
+    font-family: Georgia, serif;
+    cursor: pointer;
+}
+
+.rsvp-form button:hover {
+    background: #6f5746;
+}
